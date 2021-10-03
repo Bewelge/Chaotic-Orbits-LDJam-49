@@ -352,7 +352,7 @@ export class Level {
 				}
 				let tx2 = str + " years"
 				let wd2 = c.measureText(tx2).width
-				c.fillText(tx2, this.getCanvasWidth() / 2 - wd2 / 2 - 30, 75)
+				c.fillText(tx2, this.getCanvasWidth() / 2 - wd2 / 2 - 25, 75)
 
 				tx = "All planets in orbit"
 			} else {
@@ -363,14 +363,14 @@ export class Level {
 				}
 				let tx2 = str + " years"
 				let wd2 = c.measureText(tx2).width
-				c.fillText(tx2, this.getCanvasWidth() / 2 - wd2 / 2 - 30, 75)
+				c.fillText(tx2, this.getCanvasWidth() / 2 - wd2 / 2 - 25, 75)
 			}
 		} else {
 			tx = "Select Planets on the left and place them in orbit"
 		}
 		let wd = c.measureText(tx).width / 2
 
-		c.fillText(tx, this.getCanvasWidth() / 2 - wd - 30, 50)
+		c.fillText(tx, this.getCanvasWidth() / 2 - wd - 25, 50)
 	}
 
 	renderPlacing(c) {
@@ -380,10 +380,16 @@ export class Level {
 			if (this.placedPlanetPos) {
 				c.globalAlpha = 1
 				c.lineWidth = 5
-				strokeLine(c, this.placedPlanetPos, this.mouse, 3, "green")
+				strokeLine(
+					c,
+					this.placedPlanetPos,
+					this.mouse,
+					3,
+					"rgba(255,255,255,0.5)"
+				)
 
 				c.globalCompositeOperation = "lighter"
-				c.strokeStyle = "rgba(255,255,0,0.5)"
+				c.strokeStyle = "rgba(155,155,0,0.5)"
 				c.lineWidth = 2
 				c.shadowBlur = 5
 				c.shadowColor = "white"
@@ -406,10 +412,14 @@ export class Level {
 					}
 
 					c.lineTo(vec.x, vec.y)
+					c.stroke()
+					c.closePath()
+					c.beginPath()
+					c.moveTo(vec.x, vec.y)
 				}
-
 				c.stroke()
 				c.closePath()
+
 				c.shadowBlur = 0
 				c.globalCompositeOperation = "source-over"
 			}
