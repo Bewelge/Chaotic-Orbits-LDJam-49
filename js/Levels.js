@@ -88,11 +88,10 @@ export const levels = [
 	},
 	{
 		suns: [
-			{ rad: 30, pos: [0.75, 0.3] },
-			{ rad: 20, pos: [0.45, 0.6] },
-			{ rad: 30, pos: [0.65, 0.6] }
+			{ rad: 13, pos: [0.45, 0.45] },
+			{ rad: 13, pos: [0.55, 0.55] }
 		],
-		planets: [{ rad: 14 }]
+		planets: [{ rad: 6 }, { rad: 7 }, , { rad: 10 }]
 	},
 	{
 		suns: [
