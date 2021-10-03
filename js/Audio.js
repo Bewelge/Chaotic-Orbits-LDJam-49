@@ -7,7 +7,6 @@ import {
 } from "./Util.js"
 
 export const SOUND_IDS = {
-	BEEP: "Beep",
 	CLICK: "click",
 	CRASH0: "crash0",
 	CRASH1: "crash1",

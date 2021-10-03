@@ -155,11 +155,15 @@ body {
 	font-size: 24.7px;
 	padding: 10px;
 	box-sizing: border-box;
-	color: var(--fontWeak);
 	width: 50px;
 	height: 50px;
 	margin: 50px;
 	/* background-color: var(--btn1) !important; */
+	border-color: var(--btn1);
+}
+.lvlDiv:not(.unlocked) {
+	border-color: black;
+	color: var(--fontWeak);
 }
 .lvlDiv.unlocked {
 	/* background-color: var(--btn0) !important; */
