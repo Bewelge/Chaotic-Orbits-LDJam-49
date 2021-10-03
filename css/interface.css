@@ -81,6 +81,7 @@ body {
 	/* border: 1px solid rgba(43, 255, 0, 0.568); */
 	overflow: hidden;
 	border-right: 2px dashed rgba(255, 255, 255, 0.5);
+	pointer-events: none;
 }
 .planet {
 	border-radius: 15px;
@@ -98,6 +99,7 @@ body {
 	margin: 10px;
 	transition: all 0.25s ease-out;
 	box-sizing: border-box;
+	pointer-events: all;
 }
 .planet:active {
 	transform: scale(0.9, 0.9);
