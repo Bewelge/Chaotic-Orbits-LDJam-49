@@ -12,6 +12,10 @@ export class LevelEndDialog {
 			: "Level Complete!"
 		this.dialog.appendChild(this.title)
 		if (isLast) {
+			let title2 = DomHelper.createDivWithClass("subtitle")
+			title2.innerHTML = "Thank you for playing!"
+			this.dialog.appendChild(title2)
+
 			let title3 = DomHelper.createDivWithClass("subsubTitle")
 			title3.innerHTML = "You can continue playing randomly generated levels."
 			this.dialog.appendChild(title3)
