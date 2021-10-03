@@ -334,9 +334,10 @@ export class Level {
 	}
 	renderText(c) {
 		c.fillStyle = "rgba(235,235,235,1)"
-		setFont(c, 24.7)
+		c.textBaseline = "top"
 		let tx = ""
 
+		setFont(c, 40)
 		if (this.countdown) {
 			if (this.countdownTicker < this.countdownTickerLimit) {
 				let str =
@@ -352,7 +353,7 @@ export class Level {
 				}
 				let tx2 = str + " years"
 				let wd2 = c.measureText(tx2).width
-				c.fillText(tx2, this.getCanvasWidth() / 2 - wd2 / 2 - 25, 75)
+				c.fillText(tx2, this.getCanvasWidth() / 2 - wd2 / 2, 75)
 
 				tx = "All planets in orbit"
 			} else {
@@ -363,14 +364,15 @@ export class Level {
 				}
 				let tx2 = str + " years"
 				let wd2 = c.measureText(tx2).width
-				c.fillText(tx2, this.getCanvasWidth() / 2 - wd2 / 2 - 25, 75)
+				c.fillText(tx2, this.getCanvasWidth() / 2 - wd2 / 2, 75)
 			}
 		} else {
 			tx = "Select Planets on the left and place them in orbit"
 		}
+		setFont(c, 24.7)
 		let wd = c.measureText(tx).width / 2
 
-		c.fillText(tx, this.getCanvasWidth() / 2 - wd - 25, 50)
+		c.fillText(tx, this.getCanvasWidth() / 2 - wd, 33)
 	}
 
 	renderPlacing(c) {

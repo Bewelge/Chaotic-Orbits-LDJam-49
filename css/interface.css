@@ -112,7 +112,7 @@ body {
 			darkslategrey 11%,
 			transparent 44%
 		); */
-	background-color: rgba(60, 60, 60, 1);
+	background-color: rgba(60, 60, 60, 0.3);
 }
 .planetCanvas {
 	position: absolute;
@@ -145,7 +145,7 @@ body {
 	bottom: 50px;
 	left: 25%;
 	width: 50%;
-	background-color: rgb(125 125 125 / 15%);
+	background-color: rgba(0, 0, 0, 0.5);
 	height: 300px;
 	border-radius: 10px;
 	border: 2px dashed rgba(255, 255, 255, 0.5);
