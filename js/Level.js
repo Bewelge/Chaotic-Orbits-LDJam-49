@@ -30,7 +30,7 @@ export class Level {
 		})
 		this.addMouseListener()
 		this.update()
-		this.countdownTickerLimit = 5
+		this.countdownTickerLimit = 500
 		this.lastPlayed = 0
 
 		doNewRythm(this.getActivePlanets().length)

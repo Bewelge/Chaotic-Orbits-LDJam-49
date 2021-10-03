@@ -102,6 +102,7 @@ export class LevelUI {
 				"",
 				() => {
 					playSound(SOUND_IDS.CLICK)
+					getCurrentLevel().ended = true
 					getCurrentLevel().stopped = true
 					getCurrentLevel().clearUI()
 					getMenu().showLevelSelect()

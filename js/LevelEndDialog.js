@@ -1,6 +1,5 @@
 import { playSound, SOUND_IDS } from "./Audio.js"
 import { DomHelper } from "./DomHelper.js"
-import { getImage, IMAGE_IDS } from "./Images.js"
 import { getMenu } from "./main.js"
 import { appendBody, removeBody } from "./Util.js"
 
@@ -9,13 +8,13 @@ export class LevelEndDialog {
 		this.dialog = DomHelper.createDivWithClass("dialog flexCont flexCol")
 		this.title = DomHelper.createDivWithClass("subtitle")
 		this.title.innerHTML = isLast
-			? "Congratulations! You've completed all levels!"
+			? "Congratulations! </br> You've completed all levels!"
 			: "Level Complete!"
 		this.dialog.appendChild(this.title)
 		if (isLast) {
-			let title2 = DomHelper.createDivWithClass("subtitle")
-			title2.innerHTML = "Thanks for playing!"
-			this.dialog.appendChild(title2)
+			let title3 = DomHelper.createDivWithClass("subsubTitle")
+			title3.innerHTML = "You can continue playing randomly generated levels."
+			this.dialog.appendChild(title3)
 		}
 		this.dialog.appendChild(this.getSpeedInput(onSpeedChange))
 		this.dialog.appendChild(this.getButtonCont(onClear, onContinue, isLast))

@@ -15,11 +15,14 @@ export class Menu {
 			let titleDiv = DomHelper.createDivWithClass("title")
 			titleDiv.innerHTML = "Orbital Turbulence"
 			let subtitleDiv = DomHelper.createDivWithClass("subtitle")
-			subtitleDiv.innerHTML =
-				"A game by Bewelge </br> Created in 48h for LD-Jam 49"
+			subtitleDiv.innerHTML = "A game by Bewelge"
+			let subsubtitleDiv = DomHelper.createDivWithClass("subsubTitle")
+			subtitleDiv.appendChild(subsubtitleDiv)
+			subsubtitleDiv.innerHTML = "Created in 48h for LD-Jam 49"
 
 			this.cont.appendChild(titleDiv)
 			this.cont.appendChild(subtitleDiv)
+			// this.cont.appendChild(subsubtitleDiv)
 			this.cont.appendChild(this.getButtons())
 		}
 		return this.cont

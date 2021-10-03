@@ -45,6 +45,12 @@ body {
 	font-weight: 800;
 	width: 100%;
 }
+.subsubTitle {
+	font-size: 15.26px;
+	text-align: center;
+	font-weight: 800;
+	width: 100%;
+}
 .fullscreen {
 	position: absolute;
 	top: 0;
@@ -153,14 +159,11 @@ body {
 	width: 50px;
 	height: 50px;
 	margin: 50px;
-	background-color: var(--btn1) !important;
+	/* background-color: var(--btn1) !important; */
 }
 .lvlDiv.unlocked {
-	background-color: var(--btn0) !important;
+	/* background-color: var(--btn0) !important; */
 	color: var(--font);
-}
-.lvlDiv.unlocked:hover {
-	background-color: var(--btnHover);
 }
 
 .buttonCont {
