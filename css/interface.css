@@ -5,7 +5,7 @@
 	--bg0: rgba(30, 30, 30, 1);
 	--bg1: rgba(20, 20, 20, 0.5);
 	--btn0: rgba(50, 50, 50, 1);
-	--btn1: rgba(10, 10, 10, 1);
+	--btn1: rgba(5, 5, 5, 1);
 	--btnHover: rgba(155, 155, 155, 1);
 	--font: rgba(230, 230, 230, 1);
 	--fontWeak: rgba(155, 155, 155, 1);
@@ -137,8 +137,9 @@ body {
 	bottom: 50px;
 	left: 25%;
 	width: 50%;
-	background-color: var(--bg1);
+	background-color: rgb(125 125 125 / 50%);
 	height: 300px;
+	border: 3px dashed rgba(255, 255, 255, 0.5);
 }
 
 .levelSelect {
@@ -152,10 +153,10 @@ body {
 	width: 50px;
 	height: 50px;
 	margin: 50px;
-	background-color: var(--btn1);
+	background-color: var(--btn1) !important;
 }
 .lvlDiv.unlocked {
-	background-color: var(--btn0);
+	background-color: var(--btn0) !important;
 	color: var(--font);
 }
 .lvlDiv.unlocked:hover {
@@ -178,17 +179,21 @@ body {
 }
 
 .btn {
-	background-color: var(--bg0);
+	background-color: rgba(0, 0, 0, 0);
 	min-height: 50px;
 	color: var(--font);
 	font-size: 15.26px;
 	font-weight: 800;
-	padding: 1em;
 	border-radius: 5px;
 	border: none;
+	border: 1px dashed rgba(255, 255, 255, 0.3);
+	transition: all 0.25s ease-out;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 .btn:hover {
 	background-color: var(--bg1);
+	/* transform: scale(1.05, 1.05); */
 }
 #muteBtn {
 	position: absolute;

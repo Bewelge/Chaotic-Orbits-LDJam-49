@@ -13,22 +13,11 @@ export const levels = [
 		planets: [{ rad: 5 }, { rad: 12 }, { rad: 17 }]
 	},
 	{
-		suns: [{ rad: 50, pos: [0.5, 0.5] }],
-		planets: [
-			{ rad: 5 },
-			{ rad: 12 },
-			{ rad: 17 },
-			{ rad: 5 },
-			{ rad: 12 },
-			{ rad: 17 }
-		]
-	},
-	{
 		suns: [
 			{ rad: 15, pos: [0.3, 0.5] },
 			{ rad: 15, pos: [0.7, 0.5] }
 		],
-		planets: [{ rad: 10 }, { rad: 15 }]
+		planets: [{ rad: 20 }]
 	},
 	{
 		suns: [
@@ -39,6 +28,13 @@ export const levels = [
 			{ rad: 15, pos: [0.5, 0.5] }
 		],
 		planets: [{ rad: 5 }, { rad: 10 }, { rad: 5 }, { rad: 10 }]
+	},
+	{
+		suns: [
+			{ rad: 15, pos: [0.3, 0.5] },
+			{ rad: 15, pos: [0.7, 0.5] }
+		],
+		planets: [{ rad: 20 }, { rad: 10 }]
 	},
 	{
 		suns: [
@@ -57,6 +53,17 @@ export const levels = [
 		planets: [{ rad: 15 }]
 	},
 	{
+		suns: [{ rad: 50, pos: [0.5, 0.5] }],
+		planets: [
+			{ rad: 5 },
+			{ rad: 12 },
+			{ rad: 17 },
+			{ rad: 5 },
+			{ rad: 12 },
+			{ rad: 17 }
+		]
+	},
+	{
 		suns: [
 			{ rad: 20, pos: [0.1, 0.5] },
 			{ rad: 20, pos: [0.9, 0.5] },
@@ -71,6 +78,13 @@ export const levels = [
 			{ rad: 15, pos: [0.6, 0.6] }
 		],
 		planets: [{ rad: 14 }]
+	},
+	{
+		suns: [
+			{ rad: 15, pos: [0.3, 0.5] },
+			{ rad: 15, pos: [0.7, 0.5] }
+		],
+		planets: [{ rad: 20 }, { rad: 10 }, { rad: 5 }]
 	},
 	{
 		suns: [

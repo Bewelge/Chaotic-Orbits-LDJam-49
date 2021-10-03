@@ -13,7 +13,7 @@ export class Menu {
 			this.cont = DomHelper.createDivWithClass("fullscreen flexCont flexCol")
 
 			let titleDiv = DomHelper.createDivWithClass("title")
-			titleDiv.innerHTML = "Orbital Chaos"
+			titleDiv.innerHTML = "Orbital Turbulence"
 			let subtitleDiv = DomHelper.createDivWithClass("subtitle")
 			subtitleDiv.innerHTML =
 				"A game by Bewelge </br> Created in 48h for LD-Jam 49"

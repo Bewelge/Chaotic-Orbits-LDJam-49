@@ -7,11 +7,13 @@ import { appendBody, removeBody } from "./Util.js"
 export class LevelEndDialog {
 	constructor(onSpeedChange, onContinue, onClear, isLast) {
 		this.dialog = DomHelper.createDivWithClass("dialog flexCont flexCol")
-		this.title = DomHelper.createDivWithClass("title")
-		this.title.innerHTML = isLast ? "All levels Complete!" : "Level Complete!"
+		this.title = DomHelper.createDivWithClass("subtitle")
+		this.title.innerHTML = isLast
+			? "Congratulations! You've completed all levels!"
+			: "Level Complete!"
 		this.dialog.appendChild(this.title)
 		if (isLast) {
-			let title2 = DomHelper.createDivWithClass("title")
+			let title2 = DomHelper.createDivWithClass("subtitle")
 			title2.innerHTML = "Thanks for playing!"
 			this.dialog.appendChild(title2)
 		}
