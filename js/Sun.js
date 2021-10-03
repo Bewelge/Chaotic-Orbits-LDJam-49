@@ -95,6 +95,7 @@ export class Sun {
 				)
 			}
 		}
+		c.filter = "none"
 		c.restore()
 	}
 }
